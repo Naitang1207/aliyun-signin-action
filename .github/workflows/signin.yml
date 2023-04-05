@@ -8,13 +8,13 @@ on:
    workflow_dispatch:
 jobs:
   signin:
-  name: Aliyun Signin
-  runs-on: ubuntu-latest
-  steps:
-    - uses: ImYrS/aliyun-auto-signin@main
-      with:
-        REFRESH_ TOKENS: ${{ secrets. REFRESH_TOKENS }}
-        GP_TOKEN: $({ secrets.GP_TOKEN}}
-        PUSH_TYPES: 'TELEGRAM'
-        TELEGRAM BOT_ TOKEN: ${{ secrets. TELEGRAM BOT_ TOKEN }}
-        TELEGRAM_ CHAT_ID: $It secrets.TELEGRAM_ CHAT_ID }}
+    name: Aliyun Signin
+    runs-on: ubuntu-latest
+    steps:
+      - uses: ImYrS/aliyun-auto-signin@main 
+        with:
+           REFRESH_ TOKENS: ${{ secrets. REFRESH_TOKENS }}
+           GP_TOKEN: ${{ secrets.GP_TOKEN }}
+           PUSH_TYPES: 'TELEGRAM'
+           TELEGRAM_BOT_TOKEN: ${{ secrets. TELEGRAM BOT_ TOKEN }}
+           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_ CHAT_ID }}
